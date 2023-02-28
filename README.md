@@ -8,13 +8,13 @@ To use these modules, simply include the following code in your Terraform config
 
 ```
 module "my-repository" {
-source = "registry.terraform.io/martapol1230/google-artifact-registry-modules/1.0.0"
+source = "registry.terraform.io/martapol1230/terraform-google-artifact-registry/1.0.0"
 repository_id = "my-repo"
 location = "us-central1"
 }
 
 module "nodejs-repository" {
-source = "registry.terraform.io/martapol1230/google-artifact-registry-modules/1.0.0"
+source = "registry.terraform.io/martapol1230/terraform-google-artifact-registry/1.0.0"
 repository_id = "nodejs-repo"
 location = "us-central1"
 }
