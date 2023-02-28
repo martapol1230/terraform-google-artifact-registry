@@ -1,12 +1,19 @@
-<<<<<<< HEAD
-# Terraform Google Artifact Registry Module
+# Terraform Google Artifact Registry Modules
 
-This repository contains Terraform module for creating repositories in Google Artifact Registry.
+This repository contains Terraform modules for creating repositories in Google Artifact Registry.
 
 ## Usage
 
 To use these modules, simply include the following code in your Terraform configuration:
 
-=======
-# terraform-google-artifact-registry
->>>>>>> 591285d8299171518ecfd69d89ba229aef60eed4
+module "my-repository" {
+source = "registry.terraform.io/martapol1230/google-artifact-registry-modules/google"
+repository_id = "my-repo"
+location = "us-central1"
+}
+
+module "nodejs-repository" {
+source = "registry.terraform.io/martapol1230/google-artifact-registry-modules/google"
+repository_id = "nodejs-repo"
+location = "us-central1"
+}
