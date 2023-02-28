@@ -8,7 +8,7 @@ To use these modules, simply include the following code in your Terraform config
 
 ```
 module  my-repository {
-    source = "./module"
+    source = "martapol1230/artifact-registry/google"
     artifact-config = {
         repository_id = "my-repo"
         location      = "us-central1"
@@ -17,7 +17,7 @@ module  my-repository {
 
 
 module  nodejs-repository {
-    source = "./module"
+    source = "martapol1230/artifact-registry/google"
     artifact-config = {
         repository_id = "nodejs-repo"
         location      = "us-central1"
