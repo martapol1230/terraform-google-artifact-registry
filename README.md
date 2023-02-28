@@ -18,5 +18,4 @@ source = "registry.terraform.io/martapol1230/google-artifact-registry-modules/go
 repository_id = "nodejs-repo"
 location = "us-central1"
 }
-}
 ```
