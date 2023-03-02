@@ -9,10 +9,11 @@ To use this module, include it in your Terraform configuration and pass in the n
 ```hcl
 module "my-repo" {
   source = "github.com/martapol1230/terraform-google-artifact-registry"
-
   artifact-config = {
+    project       = "my-project-id"
     repository_id = "my-repository"
     location      = "us-central1"
   }
 }
+
 ```
